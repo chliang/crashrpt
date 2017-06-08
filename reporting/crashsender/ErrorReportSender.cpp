@@ -722,9 +722,9 @@ BOOL CErrorReportSender::CreateMiniDump()
         CompiledApiVer.Reserved = 0;
         LPAPI_VERSION pActualApiVer = lpImagehlpApiVersionEx(&CompiledApiVer);    
         pActualApiVer;
-        ATLASSERT(CompiledApiVer.MajorVersion==pActualApiVer->MajorVersion);
-        ATLASSERT(CompiledApiVer.MinorVersion==pActualApiVer->MinorVersion);
-        ATLASSERT(CompiledApiVer.Revision==pActualApiVer->Revision);    
+       // ATLASSERT(CompiledApiVer.MajorVersion==pActualApiVer->MajorVersion);
+       // ATLASSERT(CompiledApiVer.MinorVersion==pActualApiVer->MinorVersion);
+      //  ATLASSERT(CompiledApiVer.Revision==pActualApiVer->Revision);    
     }
 
     // Write minidump to the file
